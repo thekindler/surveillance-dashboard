@@ -1,0 +1,44 @@
+entity User{
+	id String,
+    firstName String,
+    lastName String
+    email String,
+	phoneNumber String,
+    type UserType
+}
+
+entity Location {
+	id String,
+	name String
+    city String,
+    state String,
+    country String,
+    postalcode String
+}
+
+entity Camera {
+	id String,
+	make String,
+	location String,
+    surveillanceTask String
+    ip String
+    fps String
+}
+
+entity SurveillanceTask{
+	id String,
+    type String,
+    model_name String,
+    version_id String
+}
+
+
+enum UserType {
+    OPERATOR, CONFIGURATOR, ADMIN 
+}
+
+service all with serviceImpl 
+
+// to do
+1. write relationships
+2. improve schema
