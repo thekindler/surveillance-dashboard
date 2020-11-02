@@ -1,0 +1,29 @@
+{
+  "name": "SurveillanceTask",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modename",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201101113116",
+  "entityTableName": "surveillance_task",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

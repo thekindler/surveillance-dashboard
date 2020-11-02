@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="surveillanceTask">
+            <h2><span>Surveillance Task</span> {{ surveillanceTask.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Type</span></dt>
+                <dd>
+                    <span>{{ surveillanceTask.type }}</span>
+                </dd>
+                <dt><span>Modename</span></dt>
+                <dd>
+                    <span>{{ surveillanceTask.modename }}</span>
+                </dd>
+                <dt><span>Version</span></dt>
+                <dd>
+                    <span>{{ surveillanceTask.version }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/surveillance-task', surveillanceTask.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

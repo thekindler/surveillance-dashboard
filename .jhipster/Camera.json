@@ -1,0 +1,33 @@
+{
+  "name": "Camera",
+  "fields": [
+    {
+      "fieldName": "make",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "surveillanceTask",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ip",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201101113016",
+  "entityTableName": "camera",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
