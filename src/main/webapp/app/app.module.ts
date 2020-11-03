@@ -14,6 +14,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ErrorComponent } from './layouts/error/error.component';
 import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,7 @@ import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
       disableConsoleLogging: false,
     }),
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent, DashboardComponent],
   bootstrap: [MainComponent],
 })
 export class SurveillanceAppModule {}
