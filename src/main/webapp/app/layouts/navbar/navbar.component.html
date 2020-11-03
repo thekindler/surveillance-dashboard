@@ -9,6 +9,14 @@
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
+                    <span>
+                        <fa-icon icon="home"></fa-icon>
+                        <span>Home</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                 <a class="nav-link" routerLink="/dashboard" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="heart"></fa-icon>
@@ -17,10 +25,18 @@
                 </a>
             </li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
+                <a class="nav-link" routerLink="/dataflow" (click)="collapseNavbar()">
                     <span>
-                        <fa-icon icon="home"></fa-icon>
-                        <span>Home</span>
+                        <fa-icon icon="heart"></fa-icon>
+                        <span>Dataflow</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="/dashboard" (click)="collapseNavbar()">
+                    <span>
+                        <fa-icon icon="barcode"></fa-icon>
+                        <span>Flux Query</span>
                     </span>
                 </a>
             </li>

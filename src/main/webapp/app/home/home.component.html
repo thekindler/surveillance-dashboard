@@ -1,11 +1,10 @@
-<!-- <div class="row">
-    <div class="col-md-9"> 
+<div class="row">
+    <div class="col-md-9">
         <div [ngSwitch]="isAuthenticated()">
             <div *ngSwitchCase="true">
                 <div [ngSwitch]="isConfigurator()">
                     <div *ngSwitchCase="true">
                         <p class="alert-success"> welcome configurator</p>
-                        
                         <div>
                             <a href="http://localhost:9000/camera"><button>CONFIGURE CAMERAS</button></a>
                             <a href="http://localhost:9000/sensor/"><button>CONFIGURE SENSORS</button></a>
@@ -15,20 +14,19 @@
 
                 <div [ngSwitch]="isAdmin()">
                     <div *ngSwitchCase="true">
-                        <p class="alert-success"> welcome admin</p>         
+                        <p class="alert-success"> welcome admin</p>
                         <div>
-                            <a href="http://localhost:3000/dashboard"><button>VIEW DASHBOARD</button></a> 
+                            <a href="http://localhost:3000/dashboard"><button>VIEW DASHBOARD</button></a>
                             <a href="http://localhost:9000/analytics/"><button>VIEW ANALYTICS</button></a>
                             <a href="http://localhost:9000/camera/"><button>CONFIGURE CAMERAS</button></a>
                             <a href="http://localhost:9000/location/"><button>ADD LOCATIONS</button></a>
                             <a href="http://localhost:9000/surveillance-task/"><button >ADD SURVEILLANCE TASK</button></a>
                         </div>
                     </div>
-                </div>            
+                </div>
+            </div>
         </div>
-    </div>    
-</div> -->
-<div> 
-    <object type="text/html" data="http://localhost:8086/orgs/ff448fd9216ef39e/data-explorer?bucket=surveillance" style="height: 85vh; width: 100%;"></object>
+    </div>
 </div>
+
 
