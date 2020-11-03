@@ -21,7 +21,7 @@ export class LocationUpdateComponent implements OnInit {
     city: [],
     state: [],
     country: [],
-    postalcode: [],
+    postalCode: [],
   });
 
   constructor(protected locationService: LocationService, protected activatedRoute: ActivatedRoute, private fb: FormBuilder) {}
@@ -39,7 +39,7 @@ export class LocationUpdateComponent implements OnInit {
       city: location.city,
       state: location.state,
       country: location.country,
-      postalcode: location.postalcode,
+      postalCode: location.postalCode,
     });
   }
 
@@ -65,7 +65,7 @@ export class LocationUpdateComponent implements OnInit {
       city: this.editForm.get(['city'])!.value,
       state: this.editForm.get(['state'])!.value,
       country: this.editForm.get(['country'])!.value,
-      postalcode: this.editForm.get(['postalcode'])!.value,
+      postalCode: this.editForm.get(['postalCode'])!.value,
     };
   }
 

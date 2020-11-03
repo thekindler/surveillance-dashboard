@@ -31,6 +31,9 @@ public class Camera implements Serializable {
     @Column(name = "ip")
     private String ip;
 
+    @Column(name = "fps")
+    private String fps;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
@@ -91,6 +94,19 @@ public class Camera implements Serializable {
     public void setIp(String ip) {
         this.ip = ip;
     }
+
+    public String getFps() {
+        return fps;
+    }
+
+    public Camera fps(String fps) {
+        this.fps = fps;
+        return this;
+    }
+
+    public void setFps(String fps) {
+        this.fps = fps;
+    }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override
@@ -118,6 +134,7 @@ public class Camera implements Serializable {
             ", location='" + getLocation() + "'" +
             ", surveillanceTask='" + getSurveillanceTask() + "'" +
             ", ip='" + getIp() + "'" +
+            ", fps='" + getFps() + "'" +
             "}";
     }
 }

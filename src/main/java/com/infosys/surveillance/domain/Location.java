@@ -31,8 +31,8 @@ public class Location implements Serializable {
     @Column(name = "country")
     private String country;
 
-    @Column(name = "postalcode")
-    private String postalcode;
+    @Column(name = "postal_code")
+    private String postalCode;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -95,17 +95,17 @@ public class Location implements Serializable {
         this.country = country;
     }
 
-    public String getPostalcode() {
-        return postalcode;
+    public String getPostalCode() {
+        return postalCode;
     }
 
-    public Location postalcode(String postalcode) {
-        this.postalcode = postalcode;
+    public Location postalCode(String postalCode) {
+        this.postalCode = postalCode;
         return this;
     }
 
-    public void setPostalcode(String postalcode) {
-        this.postalcode = postalcode;
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
@@ -134,7 +134,7 @@ public class Location implements Serializable {
             ", city='" + getCity() + "'" +
             ", state='" + getState() + "'" +
             ", country='" + getCountry() + "'" +
-            ", postalcode='" + getPostalcode() + "'" +
+            ", postalCode='" + getPostalCode() + "'" +
             "}";
     }
 }

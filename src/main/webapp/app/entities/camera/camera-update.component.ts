@@ -21,6 +21,7 @@ export class CameraUpdateComponent implements OnInit {
     location: [],
     surveillanceTask: [],
     ip: [],
+    fps: [],
   });
 
   constructor(protected cameraService: CameraService, protected activatedRoute: ActivatedRoute, private fb: FormBuilder) {}
@@ -38,6 +39,7 @@ export class CameraUpdateComponent implements OnInit {
       location: camera.location,
       surveillanceTask: camera.surveillanceTask,
       ip: camera.ip,
+      fps: camera.fps,
     });
   }
 
@@ -63,6 +65,7 @@ export class CameraUpdateComponent implements OnInit {
       location: this.editForm.get(['location'])!.value,
       surveillanceTask: this.editForm.get(['surveillanceTask'])!.value,
       ip: this.editForm.get(['ip'])!.value,
+      fps: this.editForm.get(['fps'])!.value,
     };
   }
 

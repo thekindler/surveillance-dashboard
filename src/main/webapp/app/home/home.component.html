@@ -1,26 +1,35 @@
 <div class="row">
 
     <div class="col-md-9">
-
+       
         <div [ngSwitch]="isAuthenticated()">
-            <div class="alert alert-success" *ngSwitchCase="true">
+            <div *ngSwitchCase="true">
 
                 <div [ngSwitch]="isConfigurator()">
-                    <div class="alert alert-warning" *ngSwitchCase="true">
-                        <p> configurator logged in</p>
+                    <div *ngSwitchCase="true">
+                        <p class="alert-success"> welcome configurator</p>
+                        
+                        <div>
+                            <a href="http://localhost:9000/camera"><button>CONFIGURE CAMERAS</button></a>
+                            <a href="http://localhost:9000/sensor/"><button>CONFIGURE SENSORS</button></a>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="alert alert-success">
-                    <span id="home-logged-message" *ngIf="account">You are logged in as user {{ account.login }}.</span
+                <div [ngSwitch]="isAdmin()">
+                    <div *ngSwitchCase="true">
+                        <p class="alert-success"> welcome admin</p>         
+                        <div>
+                            <a href="http://localhost:3000/dashboard"><button>VIEW DASHBOARD</button></a> 
+                            <a href="http://localhost:9000/analytics/"><button>VIEW ANALYTICS</button></a>
+                            <a href="http://localhost:9000/camera/"><button>CONFIGURE CAMERAS</button></a>
+                            <a href="http://localhost:9000/location/"><button>ADD LOCATIONS</button></a>
+                            <a href="http://localhost:9000/surveillance-task/"><button >ADD SURVEILLANCE TASK</button></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span>If you want to </span>
-                <a class="alert-link" (click)="login()">sign in</a><span>, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
             </div>
         </div>
     </div>
 </div>
+

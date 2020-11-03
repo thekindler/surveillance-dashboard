@@ -6,12 +6,12 @@
       "fieldType": "String"
     },
     {
-      "fieldName": "modename",
+      "fieldName": "modelName",
       "fieldType": "String"
     },
     {
-      "fieldName": "version",
-      "fieldType": "Integer"
+      "fieldName": "versionId",
+      "fieldType": "String"
     }
   ],
   "relationships": [],

@@ -16,6 +16,10 @@
     {
       "fieldName": "ip",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "fps",
+      "fieldType": "String"
     }
   ],
   "relationships": [],

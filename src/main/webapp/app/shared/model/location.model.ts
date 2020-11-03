@@ -4,7 +4,7 @@ export interface ILocation {
   city?: string;
   state?: string;
   country?: string;
-  postalcode?: string;
+  postalCode?: string;
 }
 
 export class Location implements ILocation {
@@ -14,6 +14,6 @@ export class Location implements ILocation {
     public city?: string,
     public state?: string,
     public country?: string,
-    public postalcode?: string
+    public postalCode?: string
   ) {}
 }

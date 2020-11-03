@@ -18,8 +18,8 @@ export class SurveillanceTaskUpdateComponent implements OnInit {
   editForm = this.fb.group({
     id: [],
     type: [],
-    modename: [],
-    version: [],
+    modelName: [],
+    versionId: [],
   });
 
   constructor(
@@ -38,8 +38,8 @@ export class SurveillanceTaskUpdateComponent implements OnInit {
     this.editForm.patchValue({
       id: surveillanceTask.id,
       type: surveillanceTask.type,
-      modename: surveillanceTask.modename,
-      version: surveillanceTask.version,
+      modelName: surveillanceTask.modelName,
+      versionId: surveillanceTask.versionId,
     });
   }
 
@@ -62,8 +62,8 @@ export class SurveillanceTaskUpdateComponent implements OnInit {
       ...new SurveillanceTask(),
       id: this.editForm.get(['id'])!.value,
       type: this.editForm.get(['type'])!.value,
-      modename: this.editForm.get(['modename'])!.value,
-      version: this.editForm.get(['version'])!.value,
+      modelName: this.editForm.get(['modelName'])!.value,
+      versionId: this.editForm.get(['versionId'])!.value,
     };
   }
 

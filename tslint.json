@@ -8,7 +8,6 @@
     "no-host-metadata-property": true,
     "no-input-rename": true,
     "no-output-rename": true,
-    "no-console": [false, "log", "error"],
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": false,
     "component-class-suffix": true,

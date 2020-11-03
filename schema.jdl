@@ -9,11 +9,13 @@ entity User{
 
 entity Location {
 	id String,
-	name String
     city String,
     state String,
     country String,
-    postalcode String
+    postalCode String,
+    latitude String,
+    longitude String,
+    complete_address String
 }
 
 entity Camera {
@@ -28,8 +30,8 @@ entity Camera {
 entity SurveillanceTask{
 	id String,
     type String,
-    model_name String,
-    version_id String
+    modelName String,
+    versionId String
 }
 
 
@@ -40,5 +42,5 @@ enum UserType {
 service all with serviceImpl 
 
 // to do
-1. write relationships
-2. improve schema
+//1. write relationships
+//2. improve schema

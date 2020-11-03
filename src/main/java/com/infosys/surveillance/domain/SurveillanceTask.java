@@ -22,11 +22,11 @@ public class SurveillanceTask implements Serializable {
     @Column(name = "type")
     private String type;
 
-    @Column(name = "modename")
-    private String modename;
+    @Column(name = "model_name")
+    private String modelName;
 
-    @Column(name = "version")
-    private Integer version;
+    @Column(name = "version_id")
+    private String versionId;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
@@ -50,30 +50,30 @@ public class SurveillanceTask implements Serializable {
         this.type = type;
     }
 
-    public String getModename() {
-        return modename;
+    public String getModelName() {
+        return modelName;
     }
 
-    public SurveillanceTask modename(String modename) {
-        this.modename = modename;
+    public SurveillanceTask modelName(String modelName) {
+        this.modelName = modelName;
         return this;
     }
 
-    public void setModename(String modename) {
-        this.modename = modename;
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
     }
 
-    public Integer getVersion() {
-        return version;
+    public String getVersionId() {
+        return versionId;
     }
 
-    public SurveillanceTask version(Integer version) {
-        this.version = version;
+    public SurveillanceTask versionId(String versionId) {
+        this.versionId = versionId;
         return this;
     }
 
-    public void setVersion(Integer version) {
-        this.version = version;
+    public void setVersionId(String versionId) {
+        this.versionId = versionId;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
@@ -99,8 +99,8 @@ public class SurveillanceTask implements Serializable {
         return "SurveillanceTask{" +
             "id=" + getId() +
             ", type='" + getType() + "'" +
-            ", modename='" + getModename() + "'" +
-            ", version=" + getVersion() +
+            ", modelName='" + getModelName() + "'" +
+            ", versionId='" + getVersionId() + "'" +
             "}";
     }
 }
